@@ -6,11 +6,11 @@ class DevController {
     async handle(req: Request, res: Response): Promise<Response> {
         const { username } = req.body;
         
-        const devControllerUseCase = await DevControllerUseCase.execute(username);
+        const devControllerUseCase = new DevControllerUseCase();
 
-        console.log(devControllerUseCase);
+	const response = await devControllerUseCase.execute(username);
 
-        return res.status(201).json(devControllerUseCase);
+        return res.status(201).json(response);
     }
 }
 
