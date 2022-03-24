@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { DevControllerUseCase } from '@controllers/DevController/DevControllerUseCase';
+import { DevControllerUseCase } from './DevControllerUseCase';
 
 class DevController {
     async handle(req: Request, res: Response): Promise<Response> {

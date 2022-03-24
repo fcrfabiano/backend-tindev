@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { DevController } from '@controllers/DevController/DevController';
+import { DevController } from '../controllers/DevController/DevController';
 
 const devRoutes = Router();
 
