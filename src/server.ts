@@ -1,6 +1,6 @@
 import Express from 'express';
 import cors from 'cors';
-import '@config/database';
+import './config/database';
 
 import { routes } from './routes';
 
