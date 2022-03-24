@@ -1,4 +1,5 @@
 import Express from 'express';
+import '@config/database';
 
 import { router } from './routes';
 
