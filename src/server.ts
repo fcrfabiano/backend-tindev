@@ -1,9 +1,13 @@
 import Express from 'express';
 import '@config/database';
 
-import { router } from './routes';
+import { routes } from './routes';
 
 const app = Express();
-app.use(router);
+
+app.use(Express.json());
+app.use(routes);
 
 app.listen(3333);
+
+export { app };
